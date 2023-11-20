@@ -1,0 +1,161 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+    
+}
+main{
+    margin: 10px;
+    display: grid;
+    gap: 10px;  
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr  ;
+}
+nav{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+   
+
+.one{
+    color: white;
+    background-color: blueviolet;
+    padding: 10px;
+    grid-column: 1/3;
+    grid-row: 1/2;
+
+}
+.Two{
+    color: white;
+    background-color: rgb(122, 115, 115);
+    padding: 10px;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    
+}
+.Three{
+    color: black;
+    background-color:white ;
+    padding: 10px;
+    grid-column: 4/5;
+    grid-row: 1/3;
+}
+.four{
+    color: black;
+    background-color: white;
+    
+    padding: 10px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.five{
+    color: white;
+    background-color: black;
+    padding: 10px;
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+@media screen and (max-width: 768px){
+    main{
+        margin: 10px;
+        display: grid;
+        gap: 10px;
+        font-size: 12px;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows:1fr 1fr 1fr 1fr  ;
+    }
+    .one{
+        color: white;
+        background-color: blueviolet;
+        padding: 10px;
+        grid-column: 1/3;
+        grid-row: 1/2;
+    
+    }
+    .Two{
+        color: white;
+        background-color: rgb(155, 152, 152);
+        padding: 10px;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        
+    }
+    .Three{
+        color: black;
+        background-color:white ;
+        padding: 10px;
+        grid-column: 2/3;
+        grid-row: 2/4;
+    }
+    .four{
+        color: black;
+        background-color: white;
+        
+        padding: 10px;
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .five{
+        color: white;
+        background-color: black;
+        padding: 10px;
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+}
+@media screen and (max-width: 320px){
+    main{
+        margin: 10px;
+        display: block;
+        gap: 10px;
+        font-size: 12px;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows:1fr 1fr 1fr 1fr  ;
+    }
+    .one{
+        color: white;
+        background-color: blueviolet;
+        padding: 10px;
+        grid-column: 1/3;
+        grid-row: 1/2;
+        
+    
+    }
+    .Two{
+        color: white;
+        background-color: rgb(122, 115, 115);
+        padding: 10px;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin-top: 10px;
+        
+    }
+    .Three{
+        color: black;
+        background-color:white ;
+        padding: 10px;
+        grid-column: 2/3;
+        grid-row: 2/4;
+        margin-top: 10px;
+    }
+    .four{
+        color: black;
+        background-color: white;
+        
+        padding: 10px;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        margin-top: 10px;
+    }
+    .five{
+        color: white;
+        background-color: black;
+        padding: 10px;
+        grid-column: 1/3;
+        grid-row: 4/5;
+        margin-top: 10px;
+    }
+}
